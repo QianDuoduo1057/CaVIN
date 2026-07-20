@@ -1,0 +1,7 @@
+{
+  "vision_encoder": 15730344082425,
+  "mlp_projector": 59592671232,
+  "language_model": 10046672421888,
+  "total_gflops": 25836.609175545,
+  "total_tflops": 25.836609175545
+}

@@ -1,0 +1,127 @@
+{
+  "model": "InternVL2-8B",
+  "original_tflops": 25.8366,
+  "architecture": {
+    "vision": {
+      "layers": 45,
+      "hidden_size": 3200,
+      "num_heads": 25,
+      "intermediate_size": 12800
+    },
+    "llm": {
+      "layers": 48,
+      "hidden_size": 6144,
+      "num_heads": 48,
+      "num_kv_heads": 8,
+      "intermediate_size": 16384,
+      "vocab_size": 92553
+    },
+    "projector": {
+      "input_size": 12800,
+      "hidden_size": 6144,
+      "output_size": 6144
+    }
+  },
+  "baseline": {
+    "vision_tflops": 11.951193682425,
+    "projector_tflops": 0.059594244096,
+    "llm_tflops": 10.046672421888,
+    "total_tflops": 22.057460348409
+  },
+  "pruning_config": {
+    "prune_start_layer": 5,
+    "affected_layers": 43,
+    "image_token_len": 256,
+    "text_seq_len": 10
+  },
+  "results": [
+    {
+      "prune_ratio": 0.15,
+      "remaining_tokens": 217,
+      "vision_tflops": 11.951193682425,
+      "projector_tflops": 0.059594244096,
+      "llm_tflops": 8.717804876688,
+      "total_tflops": 20.728592803209,
+      "relative_pct": 93.9754281580479,
+      "reduction_pct": 6.024571841952097,
+      "saved_tflops": 1.3288675451999978
+    },
+    {
+      "prune_ratio": 0.25,
+      "remaining_tokens": 192,
+      "vision_tflops": 11.951193682425,
+      "projector_tflops": 0.059594244096,
+      "llm_tflops": 7.867674047488,
+      "total_tflops": 19.878461974009,
+      "relative_pct": 90.12126355445463,
+      "reduction_pct": 9.878736445545378,
+      "saved_tflops": 2.178998374399999
+    },
+    {
+      "prune_ratio": 0.35,
+      "remaining_tokens": 166,
+      "vision_tflops": 11.951193682425,
+      "projector_tflops": 0.059594244096,
+      "llm_tflops": 6.984952943808,
+      "total_tflops": 18.995740870329,
+      "relative_pct": 86.11934724252677,
+      "reduction_pct": 13.880652757473221,
+      "saved_tflops": 3.061719478079997
+    },
+    {
+      "prune_ratio": 0.45,
+      "remaining_tokens": 140,
+      "vision_tflops": 11.951193682425,
+      "projector_tflops": 0.059594244096,
+      "llm_tflops": 6.103674543104,
+      "total_tflops": 18.114462469625,
+      "relative_pct": 82.12397158828665,
+      "reduction_pct": 17.876028411713353,
+      "saved_tflops": 3.9429978787839985
+    },
+    {
+      "prune_ratio": 0.55,
+      "remaining_tokens": 115,
+      "vision_tflops": 11.951193682425,
+      "projector_tflops": 0.059594244096,
+      "llm_tflops": 5.257652002704,
+      "total_tflops": 17.268439929225,
+      "relative_pct": 78.28843237825687,
+      "reduction_pct": 21.711567621743132,
+      "saved_tflops": 4.7890204191839985
+    },
+    {
+      "prune_ratio": 0.65,
+      "remaining_tokens": 89,
+      "vision_tflops": 11.951193682425,
+      "projector_tflops": 0.059594244096,
+      "llm_tflops": 4.379203519376,
+      "total_tflops": 16.389991445897,
+      "relative_pct": 74.30588647563502,
+      "reduction_pct": 25.69411352436498,
+      "saved_tflops": 5.667468902511999
+    },
+    {
+      "prune_ratio": 0.75,
+      "remaining_tokens": 64,
+      "vision_tflops": 11.951193682425,
+      "projector_tflops": 0.059594244096,
+      "llm_tflops": 3.535902053376,
+      "total_tflops": 15.546689979897,
+      "relative_pct": 70.48268356523819,
+      "reduction_pct": 29.51731643476181,
+      "saved_tflops": 6.510770368511999
+    },
+    {
+      "prune_ratio": 0.85,
+      "remaining_tokens": 38,
+      "vision_tflops": 11.951193682425,
+      "projector_tflops": 0.059594244096,
+      "llm_tflops": 2.660283487424,
+      "total_tflops": 14.671071413945,
+      "relative_pct": 66.51296741423462,
+      "reduction_pct": 33.48703258576538,
+      "saved_tflops": 7.386388934463998
+    }
+  ]
+}
